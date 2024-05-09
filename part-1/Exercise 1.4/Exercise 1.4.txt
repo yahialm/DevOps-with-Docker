@@ -1,0 +1,20 @@
+1) Run the container:
+--> docker run -d -it --name exercise ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+2)Run a new Bash session within the container then install "curl" package:
+--> docker exec -it exercise bash
+--> apt update && apt install curl
+
+3) Exit the container then run;
+--> docker attach exercise
+
+And enter "helsinki.fi" and got:
+
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.22.1</center>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Here is the link to the built image in Docker Hub: https://hub.docker.com/r/yahialm/sharded-map-app
+
+
+PS: Note that the project is available through GitHub and this is the project to the README file --> https://github.com/yahialm/Sharded-maps/blob/main/README.md

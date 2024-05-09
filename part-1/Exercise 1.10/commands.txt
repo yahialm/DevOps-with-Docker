@@ -1,0 +1,6 @@
+1). I used this command: "docker run -it -p 127.0.0.1:8080:8080 web-server server" to run the server and got the output in screen-1.
+
+2). I use this command: "docker inspect <container_name>" ,to get the ip address of the container in order to use curl.
+
+3). Finally I used curl to get the message with this command: "curl 172.17.0.3:8080".
+The message is shown within the screen-2.

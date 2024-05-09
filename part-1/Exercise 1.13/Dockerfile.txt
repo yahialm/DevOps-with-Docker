@@ -1,0 +1,15 @@
+FROM golang:1.16
+
+WORKDIR /usr/app
+
+COPY . .
+
+RUN go build
+
+RUN test ./...
+
+ENV PORT=8080
+
+ENV REQUEST_ORIGIN="https://example.com"
+
+CMD ["./server"]
